@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        {% endblock %}
+    </header>
+    <nav>
+        {% block menu %}
+            <a href="http://127.0.0.1:8000/plant"><h2>Главная</h2></a>
+            <a href="http://127.0.0.1:8000/plant/employee"><h2>Сотрудники</h2></a>
+            <a href="http://127.0.0.1:8000/plant/local"><h2>Зоны обслуживания</h2></a>
+            <a href="http://127.0.0.1:8000/plant/segment"><h2>Сегменты обслуживания</h2></a>
+            <a href="http://127.0.0.1:8000/plant/task"><h2>Ремонт</h2></a>
+        {% endblock %}
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
